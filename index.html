@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>DiMOS - Distributed Metrics Observation System</title>
+<style type="text/css">
+a {
+color: #000000;
+}
+a:visited {
+color: #909000;
+}
+body {
+margin: 50px;
+}
+.box {
+background-color: #f0f000;
+width: 500px;
+float: left;
+margin: 10px;
+padding: 10px;
+}
+.container {
+background-color: #f0f0c0;
+clear: both;
+padding: 10px;
+height: 50px;
+}
+.containerarea {
+background-color: #f0f0c0;
+}
+.spacer {
+height: 40px;
+clear: both;
+}
+</style>
+</head>
+<body>
+DiMOS (greek δημος = people) is a Distributed Metrics Observation System. It contains facilities to acquire metrics in a reliable way, aggregate them, filter outliers, vote on diverging metrics, and visualise the filtering and voting processes.
+DiMOS can be used across different application areas, as collaborative research infrastructure or as prototypical solution in commercial use cases.
+
+<div class="spacer"></div>
+
+<div class="container">
+Application Areas
+
+<div class="containerarea">
+
+<div class="box">
+<b>AI</b><br>
+In data-centric artificial intelligence, emphasis is put on the quality of input data due to its impact on autonomous decision-making processes.
+DiMOS is a good fit for preprocessing input data in distributed environments.
+</div>
+
+<div class="box">
+<b>IoT</b><br>
+High-quality sensing requires redundant measurement points from which the relevant values need to be determined.
+DiMOS offers a suitable foundation for bringing more data science into the Internet of Things.
+</div>
+
+<div class="box">
+<b>Cloud Computing</b><br>
+Cloud software artefacts are known to require heavy testing to avoid inconsistencies, quality deficiencies and bugs.
+DiMOS offers methods and tools to automate such testing, assessment and insights generation.
+</div>
+
+</div>
+
+</div>
+
+<div class="spacer"></div>
+
+<div class="container">
+Software Tools
+
+<div class="containerarea">
+
+<div class="box">
+<b>DiMOS Orchestrator</b> (formerly MAO Orchestrator)<br>
+The orchestrator schedules metrics acquisition and observation through tools executed in sequential workflows (pipelines).
+It performs generic actions to increase reliability, including rescheduling in cases of failure, outlier detection, and voting.
+<br><br>
+<a href="https://github.com/serviceprototypinglab/mao-orchestrator">»» Git</a>
+</div>
+
+<div class="box">
+<b>Visualisation</b><br>
+A web-based visualisation of multiple independent nodes in a federation of metrics observers including timeline
+and statistics on agreements and disagreements.
+</div>
+
+<div class="box">
+<b>Acquisition and Insights Tools</b><br>
+Tools are containerised software responsible for either acquisition or aggregation of metrics, or both.
+Their functionality depends on the data sources (e.g. websites, APIs or sensors).
+<br><br>
+<a href="https://mao-mao-research.github.io/hub/api/tools.json">»» JSON API Tools</a><br>
+<a href="https://mao-mao-research.github.io/hub/api/pipelines.json">»» JSON API Pipelines</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="spacer"></div>
+
+<div class="container">
+Observations
+
+<div class="containerarea">
+
+<div class="box">
+<b>Microservice Artefact Observatory</b><br>
+The 'original' community of researchers performing static and dynamic analysis of microservice
+artefacts such as Helm charts, AWS SAR, Dockerfiles and Docker images among others.
+<br><br>
+<a href="https://mao-mao-research.github.io/">»» Website</a><br>
+</div>
+
+<div class="box">
+<b>More observations: Registry of federations</b><br>
+DiMOS is increasingly useful for different domains. The orchestrator's installer makes it easy to join an existing federation.
+They can also be inspected beforehand.
+<br><br>
+<a href="https://mao-mao-research.github.io/hub/api/federations.json">»» JSON API Federations</a><br>
+</div>
+
+</div>
+
+</div>
+
+<div class="spacer"></div>
+
+<div class="container">
+Publications
+
+<div class="containerarea">
+
+<div class="box">
+<b>Decentralised Data Quality Control in Ground Truth Production for Autonomic Decisions</b><br>
+<i>IEEE TPDS, accepted for publication, 2022</i><br>
+Autonomic decision-making based on rules and metrics is inevitably on the rise in distributed software systems.
+Often, the metrics are acquired from system observations such as static checks and runtime traces.
+To avoid bias propagation and hence reduce wrong decisions in increasingly
+autonomous systems due to poor observation data quality, multiple independent observers can exchange their
+findings and produce a majority-accepted, complete and outlier-cleaned ground truth in the
+form of consensus-supported metrics.
+In this work, we motivate the growing importance of metrics for informed and autonomic
+decisions in clouds and other distributed systems, present reasons for diverging observations,
+and describe a federated approach to produce ground truth with data-centric consensus voting for more reliable decision making processes.
+We validate the system design with experiments in the area of cloud software artefact
+observations and highlight benefits for reproducible distributed system behaviour.
+<br><br>
+<a href="https://doi.org/10.5281/zenodo.5835875">»» Zenodo</a><br>
+<a href="https://github.com/serviceprototypinglab/dcc">»» Git</a>
+</div>
+
+<div class="box">
+<b>Towards Reproducible Software Studies with MAO and Renku</b><br>
+<i>SoftwareX, accepted for publication, 2022</i>
+In software engineering, the developers' joy of decomposing and recomposing microservice-based applications has led
+to an enormous wave of microservice artefact technologies. To understand them better, researchers perform hundreds of experiments and empirical studies
+on them each year. Improving the reuse and reproducibility of these studies requires two ingredients:
+A system to automate repetitive experiments, and a research data management system with emphasis on making research reproducible.
+Both frameworks are now available via the Microservice Artefact Observatory (MAO) and Renku.
+In this paper, we explain the current capabilities of MAO as a global federated research infrastructure for determining software quality characteristics.
+Moreover, we emphasise the integration of MAO with Renku to demonstrate how a reproducible end-to-end experiment workflow involving globally distributed research teams looks like.
+<br><br>
+...
+</div>
+
+</div>
+
+</div>
+
+<div class="spacer"></div>
+
+DiMOS is mainly researched and developed at Zurich University of Applied Sciences, Switzerland, along with research partners.
+This website is work in progress. Revisit later to get more information -- or ask!
+
+</body>
+</html>
